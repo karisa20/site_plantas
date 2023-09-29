@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site de Plantas</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/carrosel.css">
 </head>
 <body>
     <header id="topo">
         <div class="conteiner"> <!--conter tudo desde o logo até os botões-->
             <div class="logo">
-                <img src="imgs/Marca-Dagua-Principal-Original.png" alt="logo" width="25%">
+                <img src="imgs/Marca-Dagua-Principal-Original.png" alt="logo" width="10%">
             </div>
             <nav class="menu">
                 <ul>
@@ -25,8 +26,48 @@
             </div>
         </div>
     </header>
-    <section>
+    <section class="carrosel">
+
+        <div class="carrosel-contente"> <!--Botões inputs-->
+            <input type="radio" name="bts-radio" id="radio1">
+            <input type="radio" name="bts-radio" id="radi2">
+            <input type="radio" name="bts-radio" id="radio3">
+
+            <div class="slide-box primeiro"><!--classe a mais (primeiro/segundo/etc). Para distinguir as classes tem que ter espaço entre elas-->
+                <img class="img-desktop" src="imgs/orchids-g455aecd9f_1920.jpg" alt="Orquídea" width="1800" height="600">
+               <!-- <a href="#"><img src="imgs/a730340106.webp" alt="Orquídea"></a> se eu quisesse colocar um link dentro da img-->
+               <img class="img-mobile" src="imgs/orchids-g455aecd9f_1920.jpg" alt="Orquídea" width="1040" height="600">
+            </div> 
+
+            <div class="slide-box segundo"> <!--contém imagens tipo desktop e mobile-->
+                <img class="img-desktop" src="imgs/suculentas-pexels-quang-nguyen-vinh.webp" alt="suculenta" width="1800" height="600">
+                <img class="img-mobile" src="imgs/suculentas-pexels-quang-nguyen-vinh.webp" alt="suculenta" width="1040" height="600">
+            </div>
+
+            <div class="slide-box terceiro">
+                <img class="img-desktop" src="imgs/129284336e204f62711.webp" alt="zamiucuca" width="1800" height="600">
+                <img class="img-mobile" src="imgs/129284336e204f62711.webp" alt="zamiucuca" width="1040" height="600">
+            </div>
+            
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>           
+                <label for="radio2" class="manual-btn"></label>           
+                <label for="radio3" class="manual-btn"></label>           
+            </div>
+
+        </div>
         <!--slide carrosel https://www.youtube.com/watch?v=sk7mgXO-FeQ-->
+    </section><br><br><br>
+    <section>
+        <h1>HOME</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nisi dicta sequi et cumque, fuga rem fugit dolorem laborum doloremque ducimus voluptates ipsum qui odio totam ab voluptate quos. Enim!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nisi dicta sequi et cumque, fuga rem fugit dolorem laborum doloremque ducimus voluptates ipsum qui odio totam ab voluptate quos. Enim!</p>
     </section>
 </body>
 </html>

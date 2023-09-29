@@ -1,0 +1,46 @@
+section.carrosel{
+    margin: 0 auto; /*centralizar*/
+    width: 100%; /* para ocupar todo espaço da tela*/
+    height: auto;
+    padding: 0 !important; /*colocando importante para que ele não crie paddings adicionais*/
+    overflow: hidden;/*barra de rolagem fique escondida mesmo que o conteúdo vaze da tela*/
+}
+.carrosel-contente{
+    width: 400%; /*bem exagerado, para que caiba todas as imgens e ainda sobre*/
+    height: auto;
+    display: flex; /*para que as divs fiquem uma do lado da outra*/
+
+}
+.carrosel-contente input, .img-mobile{
+    display: none;/*para deixar os inputs escondidos*/
+}
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+
+}
+.slide-box img{
+   width: 100%; 
+}
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 46%;
+    display: flex;
+    justify-content: center;
+}
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid green;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child)/*pra não aplicar espaço na última bolinha e tirar aquela emboleira de pontos*/{
+    margin-right: 10px;
+}
+.nav-manual .manual-btn:hover{
+    background-color: green;
+}
