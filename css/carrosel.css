@@ -19,7 +19,7 @@ section.carrosel{
     height: auto;
     position: relative;
     text-align: center;
-
+    transition: 1s;
 }
 .slide-box img{
    width: 100%; 
@@ -27,7 +27,7 @@ section.carrosel{
 .nav-manual, .nav-auto{
     position: absolute;
     width: 100%;
-    margin-top: 46%;
+    margin-top: 47%;
     display: flex;
     justify-content: center;
 }
@@ -43,4 +43,27 @@ section.carrosel{
 }
 .nav-manual .manual-btn:hover{
     background-color: green;
+}
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{/*quando radio1 estiver marcado aconteça algo*/
+    background-color: green;
+}
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+@media screen and (max-width: 586px){
+    .img-desktop{
+        display: none; /*fazendo as imgs desktop sumirem*/
+    }
+    .img-mobile{
+        display: block;/* e aparecerem as imgs de mobile*/
+    }
+    .nav-auto, .nav-manual{
+        margin-top: 110%;
+    }
 }
