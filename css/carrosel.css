@@ -27,7 +27,7 @@ section.carrosel{
 .nav-manual, .nav-auto{
     position: absolute;
     width: 100%;
-    margin-top: 47%;
+    bottom: -150px;
     display: flex;
     justify-content: center;
 }
@@ -56,14 +56,11 @@ section.carrosel{
 #radio3:checked ~ .primeiro{
     margin-left: -50%;
 }
-@media screen and (max-width: 586px){
+@media screen and (max-width: 928px){
     .img-desktop{
         display: none; /*fazendo as imgs desktop sumirem*/
     }
     .img-mobile{
         display: block;/* e aparecerem as imgs de mobile*/
-    }
-    .nav-auto, .nav-manual{
-        margin-top: 110%;
     }
 }
